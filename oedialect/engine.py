@@ -167,7 +167,7 @@ class OEConnection():
                 port=port,
                 suffix=suffix),
             json=json.loads(json.dumps(data)),
-            headers=header, stream=True, verify=verify)
+            headers=header, stream=True, verify=False)
 
         process_returntype(response)
 

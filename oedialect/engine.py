@@ -222,7 +222,7 @@ class OEConnection():
                 port=port,
                 suffix=suffix),
             json=json.loads(json.dumps(data, default=date_handler)),
-            headers=header, verify=verify)
+            headers=header, verify=False)
 
         try:
             json_response = ans.json()
